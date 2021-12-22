@@ -1,4 +1,85 @@
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #181620;
+  color: #f8f8ff;
+}
+
+button {
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+header h1 {
+  text-align: center;
+  margin: 5rem 0 5rem 0;
+}
+
+.narration {
+  width: 90%;
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.rps h3 {
+  text-align: center;
+  margin: 3rem 0;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.choices button {
+  flex: 180px;
+  padding: 1rem;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 5rem;
+}
+
+.playerScore,
+.computerScore {
+  border: 0.125rem solid white;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.reset {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.reset button {
+  padding: 1rem 2rem;
 }
