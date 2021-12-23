@@ -20,19 +20,29 @@ body {
 }
 
 button {
-  background-color: white;
-  border: none;
-  border-radius: 0.5rem;
+  background-color: #f8f8ff;
+  border: 2px solid #181620;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 1rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: #181620;
+    border-color: #f8f8ff;
+    color: #f8f8ff;
 }
 
 header h1 {
   text-align: center;
   margin: 5rem 0 5rem 0;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
 }
 
-.narration {
+.commentary {
   width: 90%;
   text-align: center;
   margin: 5rem auto;
@@ -41,8 +51,6 @@ header h1 {
 .rps h3 {
   text-align: center;
   margin: 3rem 0;
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
 }
 
 .choices {
@@ -70,16 +78,15 @@ header h1 {
   border: 0.125rem solid white;
   padding: 1rem 1.5rem;
   border-radius: 4px;
-  font-weight: 600;
   font-size: 2rem;
 }
 
-.reset {
+.resetButton {
   display: flex;
   justify-content: center;
   margin: 5rem;
 }
 
-.reset button {
+button.reset {
   padding: 1rem 2rem;
 }
