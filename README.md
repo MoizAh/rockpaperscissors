@@ -12,4 +12,4 @@ This project is created using:
 * Javascript
 
 ## Setup
-To run this program, click on the link in the sidebar or click [here](https://moizah.github.io/rockpaperscissors/)
+To run this program, click on the link in the sidebar or click [here](https://moizah.github.io/rockpaperscissors/).
