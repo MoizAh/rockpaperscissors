@@ -34,43 +34,36 @@ const playRound = (playerChoice, computerChoice) => {
     computerScore++;
     cScore.textContent = computerScore;
     commentary.textContent = "It's a draw! You both get a point!";
-    return "Tie game!";
   } else if (playerChoice === "rock" && computerChoice === "scissors") {
     playerScore++;
     pScore.textContent = playerScore;
     commentary.textContent =
       "You win! You chose rock. Your opponent chose scissors!";
-    return "You win! Rock beats scissors!";
   } else if (playerChoice === "rock" && computerChoice === "paper") {
     computerScore++;
     cScore.textContent = computerScore;
     commentary.textContent =
       "You lose! You chose rock. Your opponent chose paper!";
-    return "You lose! Paper beats rock!";
   } else if (playerChoice === "paper" && computerChoice === "scissors") {
     computerScore++;
     cScore.textContent = computerScore;
     commentary.textContent =
       "You lose! You chose paper. Your opponent chose scissors!";
-    return "You lose! Scissors beats paper!";
   } else if (playerChoice === "paper" && computerChoice === "rock") {
     playerScore++;
     pScore.textContent = playerScore;
     commentary.textContent =
       "You win! You chose paper. Your opponent chose rock!";
-    return "You win! Paper beats rock";
   } else if (playerChoice === "scissors" && computerChoice === "rock") {
     computerScore++;
     cScore.textContent = computerScore;
     commentary.textContent =
       "You lose! You chose scissors. Your opponent chose rock!";
-    return "You lose! Rock beats scissors";
   } else if (playerChoice === "scissors" && computerChoice === "paper") {
     playerScore++;
     pScore.textContent = playerScore;
     commentary.textContent =
       "You win! You chose scissors. Your opponent chose paper!";
-    return "You win! Scissors beats paper!";
   }
 };
 
@@ -93,19 +86,19 @@ const resetGame = () => {
 
 // Game continues until someone reaches 5 points or the game is reset
 const playGame = () => {
-    resetGame();
-    rock.addEventListener("click", () => {
-      playRound("rock", computerPlay());
-      winner();
-    });
-    paper.addEventListener("click", () => {
-      playRound("paper", computerPlay());
-      winner();
-    });
-    scissors.addEventListener("click", () => {
-      playRound("scissors", computerPlay());
-      winner();
-    });
-  };
+  resetGame();
+  rock.addEventListener("click", () => {
+    playRound("rock", computerPlay());
+    winner();
+  });
+  paper.addEventListener("click", () => {
+    playRound("paper", computerPlay());
+    winner();
+  });
+  scissors.addEventListener("click", () => {
+    playRound("scissors", computerPlay());
+    winner();
+  });
+};
 
 playGame();
